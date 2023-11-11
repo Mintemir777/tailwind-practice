@@ -1,29 +1,26 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Button from "@mui/material/Button";
-import { BrowserRouter as Router } from "react-router-dom";
 export default function MyRoutes() {
   return (
-    <Router>
+    <ul  className="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+
       <li className="mx-4 my-6 md:my-0 md:mt-1">
-        <NavLink
-          to="/"
-          end
+        <a
+          href="/"
           className="text-x1 hover:text-orange-700 duration-500"
-        >
+          >
           HOME
-        </NavLink>
+        </a>
       </li>
 
       <li className="mx-4 my-6 md:my-0 md:mt-1">
-        <NavLink
-          to="/about"
-          end
+        <a
+          href="/about"
           className="text-x1 hover:text-orange-700 duration-500"
           mt-1
-        >
+          >
           ABOUT
-        </NavLink>
+        </a>
       </li>
       <Button
         variant="contained"
@@ -42,9 +39,9 @@ export default function MyRoutes() {
             color: "#ffffff",
           },
         }}
-      >
+        >
         Sponsor Us
       </Button>
-    </Router>
+        </ul>
   );
 }

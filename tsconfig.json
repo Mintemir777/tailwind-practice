@@ -32,5 +32,5 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.jpg"
-  ]
+, "src/App.tsx"  ]
 }
